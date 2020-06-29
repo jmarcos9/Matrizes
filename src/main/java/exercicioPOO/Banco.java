@@ -1,13 +1,25 @@
-package pooBanco;
+package exercicioPOO;
 
 public class Banco {
 
     private String numero;
     private String agencia;
     private boolean especial;
-    private double limiteEspecial;
-    private double valorEspecialUsado;
+    private double limiteEspacial;
+    private double valorEspecialUsado = 0;
     private double saldo;
+
+    Banco (){}
+
+    public Banco(String numero, String agencia, boolean especial, double limiteEspacial,
+                 double valorEspecialUsado, double saldo) {
+        this.numero = numero;
+        this.agencia = agencia;
+        this.especial = especial;
+        this.limiteEspacial = limiteEspacial;
+        this.valorEspecialUsado = valorEspecialUsado;
+        this.saldo = saldo;
+    }
 
     public String getNumero() {
         return numero;
@@ -33,12 +45,12 @@ public class Banco {
         this.especial = especial;
     }
 
-    public double getLimiteEspecial() {
-        return limiteEspecial;
+    public double getLimiteEspacial() {
+        return limiteEspacial;
     }
 
-    public void setLimiteEspecial(double limiteEspecial) {
-        this.limiteEspecial = limiteEspecial;
+    public void setLimiteEspacial(double limiteEspacial) {
+        this.limiteEspacial = limiteEspacial;
     }
 
     public double getValorEspecialUsado() {
@@ -57,7 +69,7 @@ public class Banco {
         this.saldo = saldo;
     }
 
-    boolean realizarSaque(double quantiaSacar) {
+    public boolean realizarSaque(double quantiaSacar) {
         //tem saldo na conta
         if (saldo >= quantiaSacar) {
             saldo -= quantiaSacar;
@@ -66,6 +78,7 @@ public class Banco {
         } else {//não tem saldo
             if (especial) {
                 //verificar se o limite especial tem saldo
+                double limiteEspecial = 0;
                 double limite = limiteEspecial + saldo;
 
                 if (limite >= quantiaSacar) {
@@ -83,18 +96,17 @@ public class Banco {
     }
 
     //instruções para depositar
-    void depositar(double valorDepositado) {
+    public void depositar(double valorDepositado) {
         saldo += valorDepositado;
     }
 
-    void consultarSaldo() {
-        System.out.printf("\nSaldo atual da conta: R$ %.2f ", getSaldo());
+    public void consultarSaldo() {
+        System.out.printf("\nSaldo atual da conta: R$ %.2f ", saldo);
     }
 
-    boolean usoChequeEspecial() {
+    public boolean usoChequeEspecial() {
         return saldo > 0;
     }
 
 
 }
-
