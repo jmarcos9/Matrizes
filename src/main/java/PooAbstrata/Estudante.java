@@ -1,4 +1,4 @@
-package Polimofismo;
+package PooAbstrata;
 
 public class Estudante extends Pessoa {
 
@@ -51,5 +51,10 @@ public class Estudante extends Pessoa {
        //return endereco;
     }
 
+    @Override
+    public void imprimirEtiqueraEndereco() {
 
+        System.out.println(this.obterEtiquetaEndereco());
+
+    }
 }

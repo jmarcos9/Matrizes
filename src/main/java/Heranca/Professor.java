@@ -28,7 +28,7 @@ public class Professor extends Pessoa{
     public void setNomeCurso(String nomeCurso) {
         this.nomeCurso = nomeCurso;
     }
-
+    //metodos
     public double calcularSalarioLiquido(){
         return 0;
     }

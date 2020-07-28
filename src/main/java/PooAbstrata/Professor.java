@@ -1,12 +1,8 @@
-package Polimofismo;
+package PooAbstrata;
 
 public class Professor extends Pessoa {
     private double salario;
     private String nomeCurso;
-
-
-
-
 
     public double getSalario() {
         return salario;
@@ -36,5 +32,12 @@ public class Professor extends Pessoa {
         return s;
 
         //return endereco;
+    }
+
+    @Override
+    public void imprimirEtiqueraEndereco() {
+        System.out.println("Imprimindo endereço do professor ");
+        System.out.println(this.obterEtiquetaEndereco());
+
     }
 }

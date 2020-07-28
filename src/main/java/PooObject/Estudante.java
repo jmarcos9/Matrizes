@@ -1,5 +1,7 @@
 package PooObject;
 
+import java.util.Arrays;
+
 public class Estudante {
 
     private String curso;
@@ -7,7 +9,7 @@ public class Estudante {
 
 
     public Estudante() {
-        super();
+        //super();
     }
 
     /*public Estudante(String nome, String endereco, String telefone, String telefoneCelular,
@@ -57,5 +59,20 @@ public class Estudante {
         System.out.println(this.obterEtiquetaEndereco());
     }
 
+    /*public String toString(){
+        String s = curso + "\n";
+        for (double nota : notas){
+            s += nota + " ";
+        }
+        return s;
+    }*/
 
+    //Gerando pela IDE o metodo toString
+    @Override
+    public String toString() {
+        return "Estudante{" +
+                "curso='" + curso + '\'' +
+                ", notas=" + Arrays.toString(notas) +
+                '}';
+    }
 }

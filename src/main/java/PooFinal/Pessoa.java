@@ -1,6 +1,6 @@
-package PooClasseAbstrata;
+package PooFinal;
 
-public abstract class Pessoa {
+public final class Pessoa {
     private String nome;
     private String endereco;
     private String telefone;
@@ -59,11 +59,10 @@ public abstract class Pessoa {
     }
 
     public String obterEtiquetaEndereco(){
-
         return endereco;
     }
 
-    abstract void imprimirEtiquetaEndereco();
+    //abstract void imprimirEtiquetaEndereco();
 }
 
 

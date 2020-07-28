@@ -1,6 +1,6 @@
-package PooClasseAbstrata;
+package PooFinal;
 
-public class Professor extends Pessoa {
+public class Professor {
     private double salario;
     private String nomeCurso;
 
@@ -31,14 +31,14 @@ public class Professor extends Pessoa {
     public String obterEtiquetaEndereco(){
 
         String s = "Endereço do professor: ";
-        s += this.getEndereco(); // s += super.getEndereco();
+        //s += this.getEndereco(); // s += super.getEndereco();
 
         return s;
 
         //return endereco;
     }
 
-    @Override
+   // @Override
     void imprimirEtiquetaEndereco() {
         System.out.println(this.obterEtiquetaEndereco());
 

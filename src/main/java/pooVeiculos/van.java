@@ -28,6 +28,8 @@ public class van {
         System.out.printf("\nConsumo para 15Kh: %.2f litros de combustível.", qtdeCombustivel15);
 
 
+        
+
 
     }
 }

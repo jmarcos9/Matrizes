@@ -23,7 +23,6 @@ public class ligarMotor {
                 sc.next();
                 System.out.println("Just type numbers!");
                 continue;
-
             }
 
             if (option == 1) {
@@ -38,12 +37,9 @@ public class ligarMotor {
                 }
             } else if (option == 0) {
                 exit = true;
-
             } else {
                 System.out.println("Invalid option");
             }
-
         }
-
     }
 }

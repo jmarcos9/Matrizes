@@ -1,6 +1,6 @@
-package PooClasseAbstrata;
+package PooFinal;
 
-public class Estudante extends Pessoa {
+public class Estudante {
 
     private String curso;
     private double[] notas;
@@ -10,12 +10,12 @@ public class Estudante extends Pessoa {
         super();
     }
 
-    public Estudante(String nome, String endereco, String telefone, String telefoneCelular,
+    /*public Estudante(String nome, String endereco, String telefone, String telefoneCelular,
                      String cpf, String curso, double[] notas) {
         super(nome, endereco, telefone, telefoneCelular, cpf);
         this.curso = curso;
         this.notas = notas;
-    }
+    }*/
 
     public String getCurso() {
         return curso;
@@ -44,14 +44,14 @@ public class Estudante extends Pessoa {
     public String obterEtiquetaEndereco(){
 
         String s = "Endereço do estudante: ";
-        s += this.getEndereco(); // s += super.getEndereco();
+        //s += this.getEndereco(); // s += super.getEndereco();
 
         return s;
 
        //return endereco;
     }
 
-    @Override
+    //@Override
     void imprimirEtiquetaEndereco() {
         System.out.println("Imprimindo endereço do estudante: ");
         System.out.println(this.obterEtiquetaEndereco());

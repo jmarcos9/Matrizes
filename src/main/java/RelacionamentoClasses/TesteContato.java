@@ -15,7 +15,7 @@ public class TesteContato {
         end.setNomeRua("Ulisses");
         end.setNumero("4520");
         end.setComplemento("Casa 4");
-        end.setCidade("jaboatão");
+        end.setCidade("Jaboatão");
         end.setEstado("PE");
         end.setCep("54470-030");
 

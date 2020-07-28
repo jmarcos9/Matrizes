@@ -6,9 +6,8 @@ public class Contato {
     private Endereco endereco;
     private Telefone[] telefones;
 
-    Contato(){
+    Contato(){}
 
-    }
 
     public String getNome() {
         return nome;

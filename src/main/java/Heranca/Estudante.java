@@ -1,7 +1,7 @@
 package Heranca;
 
 public class Estudante extends Pessoa{
-
+    //atributos
     private String curso;
     private double[] notas;
 
@@ -29,10 +29,12 @@ public class Estudante extends Pessoa{
         this.notas = notas;
     }
 
+    //metodos
     public double calcularMedia(){
         return 0;
     }
 
+    //metodos
     public boolean verificarAprovado(){
         return true;
     }

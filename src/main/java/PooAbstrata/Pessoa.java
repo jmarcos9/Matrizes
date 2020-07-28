@@ -1,6 +1,6 @@
-package Polimofismo;
+package PooAbstrata;
 
-public class Pessoa {
+public abstract class Pessoa {
     private String nome;
     private String endereco;
     private String telefone;
@@ -58,10 +58,9 @@ public class Pessoa {
         this.telefoneCelular = telefoneCelular;
     }
 
-    public String obterEtiquetaEndereco(){
+    public abstract String obterEtiquetaEndereco();
 
-        return endereco;
-    }
+    public abstract void imprimirEtiqueraEndereco();
 }
 
 
